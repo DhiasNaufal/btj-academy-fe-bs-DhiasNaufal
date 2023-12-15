@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTJ-Academy-FE-BS-Dhias-Muhammad-Naufal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body
+    class="d-flex align-items-center justify-content-center min-vh-100 customBG-primary"
+  >
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .customBG-primary {
+        background-color: #352f64;
+      }
+      .customBG-second {
+        background-color: #cfddf9;
+      }
+      .custom-form-control {
+        border: none;
+      }
+      .custom-form-control:hover {
+        background-color: #1f1b3c;
+      }
+      .error {
+        color: red;
+        font-size: 12px;
+        margin-top: 2px;
+      }
+      .warning {
+        color: rgb(255, 145, 0);
+        font-size: 12px;
+        margin-top: 2px;
+      }
+    </style>
+    <div class="card px-5 py-3 rounded-4">
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <img
+              src="https://img.freepik.com/free-vector/video-blogger-computer-screen-advertising-new-phone-man-posting-vlog-smartphone-review-channel-flat-vector-illustration-technology-marketing-concept-banner-landing-web-page_74855-21080.jpg?w=1480&t=st=1700274281~exp=1700274881~hmac=7a3f1665e45429eccdcb8dd30c6d2f723c31a77e18365052e97041bb968226a2"
+              alt=""
+              width="70px"
+              id="logo-kiri"
+            />
+            <a class="navbar-brand" href="#">Welcome</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="row my-4">
+        <div
+          class="col-md-5 card rounded-4 me-4 shadow-sm p-4 customBG-second border-0"
+        >
+          <h2>Welcome to Our Landing Page</h2>
+          <p>Please login to access other features</p>
+          <form onsubmit="return validateForm(event)">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="Uname"
+                aria-describedby="emailHelp"
+              />
+              <span id="errorNama" class="error"></span>
+              <div id="emailHelp" class="form-text"></div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input type="password" class="form-control" id="pass" />
+              <span id="errorPassword" class="error"></span>
+            </div>
+            <span id="capsLockWarning" class="warning"
+              >Warning! Caps lock is ON.</span
+            >
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="showPassword"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Show Password</label
+              >
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary form-control customBG-primary custom-form-control"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+        <div
+          class="col-md-6 d-flex flex-column align-items-center justify-content-center"
+        >
+          <img
+            src="https://img.freepik.com/free-vector/video-blogger-computer-screen-advertising-new-phone-man-posting-vlog-smartphone-review-channel-flat-vector-illustration-technology-marketing-concept-banner-landing-web-page_74855-21080.jpg?w=1480&t=st=1700274281~exp=1700274881~hmac=7a3f1665e45429eccdcb8dd30c6d2f723c31a77e18365052e97041bb968226a2"
+            alt=""
+            style="width: 200px"
+          />
+          <p class="text-center">
+            "The only limit to our realization of tomorrow will be our doubts of
+            today." - Franklin D. Roosevelt
+          </p>
+        </div>
+      </main>
+      <footer>
+        <p class="text-center mt-3">&copy; 2023 Landing Page</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

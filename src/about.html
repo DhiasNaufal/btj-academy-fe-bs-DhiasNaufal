@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body
+    class="d-flex align-items-center justify-content-center min-vh-100 customBG-primary p-5"
+  >
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .customBG-primary {
+        background-color: #352f64;
+      }
+      .customBG-second {
+        background-color: #cfddf9;
+      }
+      .custom-form-control {
+        border: none;
+      }
+      .custom-form-control:hover {
+        background-color: #1f1b3c;
+      }
+
+      .dark-mode2 {
+        color: #f5f4f5;
+        background-color: #1a172f !important;
+      }
+      .btn {
+        background-color: #352f64;
+        border: none;
+      }
+      .btn:hover {
+        background-color: #423b7e;
+      }
+    </style>
+    <div class="card px-5 py-3 rounded-4" id="main-container">
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid gap-3">
+            <img
+              id="logo-dhias"
+              src="assets/yas-emoji.jpeg"
+              alt=""
+              width="70px"
+              class="rounded"
+            />
+            <a class="navbar-brand" href="#">This is Everything about me</a>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="darkModeCheckbox"
+              />
+            </div>
+            <button id="clickme" class="btn btn-primary">
+              &larr; Try this
+            </button>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="">
+        <section id="opening" class="row justify-content-center my-5">
+          <div
+            id="opening-left"
+            class="col-md-4 justify-content-center align-items-center d-flex flex-column"
+          >
+            <figure>
+              <img
+                src="assets/portrait.jpg"
+                alt="Yaz-profile-pic"
+                height="350px"
+                id="portrait"
+                class="rounded-5"
+              />
+              <img
+                src="assets/prof-img.png"
+                alt="Yaz-profile-pic"
+                height="350px"
+                id="wisuda"
+                class="rounded-5"
+              />
+            </figure>
+            <p id="quote" class="text-center">
+              "Successful is created by the best combination between Commitment,
+              Discipline and Consistency"
+            </p>
+          </div>
+          <div
+            id="opening-right"
+            class="col-md-5 align-content-center justify-content-center flex-column d-flex"
+          >
+            <p>Hello There! i'am</p>
+            <h1>Dhias M. Naufal</h1>
+            <p>Front-end Engineer</p>
+            <div>
+              <a href="#project">
+                <button class="btn btn-primary">See my work</button>
+              </a>
+              <a href="#working-exp">
+                <button class="btn btn-primary">Working Experience</button>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <h2 class="judul-section text-center">Summary</h2>
+        <section id="about-me-section " class="justify-content-center">
+          <article
+            id="about-me-article"
+            class="row justify-content-center mb-5"
+          >
+            <section id="summary" class="col-md-5">
+              <p>
+                A passionate and determined recent graduate in Information
+                Engineering, committed to continuous learning and eager to apply
+                my knowledge to real-world challenges. I am highly interested in
+                the field of Software Engineering, such as designing
+                applications and solving problems that arise within software
+                systems. A curious thinker who's ambitious, loves learning,
+                doesn't give up easily, and enjoys solving problems. I thrive in
+                both team-oriented environments, where collaboration fosters
+                innovation, and when working independently to tackle complex
+                problems.
+              </p>
+            </section>
+            <section
+              id="education"
+              class="col-md-5 card rounded-3 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="assets/Lambang-UGM.png"
+                alt=""
+                height="90px"
+                width="90px"
+                id="ugm"
+              />
+              <img
+                src="assets/kmteti.png"
+                alt=""
+                height="90px"
+                width="90px"
+                id="kmteti"
+              />
+              <article>
+                <h4 class="text-center">Gadjah Mada University</h4>
+                <p class="text-center">
+                  Teknologi Informasi / Information Engineering
+                </p>
+              </article>
+            </section>
+          </article>
+        </section>
+
+        <h2 id="working-exp" class="judul-section text-center">
+          Working Experience
+        </h2>
+        <section
+          id="working-experience"
+          class="row gap-2 justify-content-center mb-5"
+        >
+          <article class="col-md-5 card shadow-sm p-4">
+            <h4>Flutter Developer at KHDTK Wanagama</h4>
+            <ul>
+              <li>
+                Translate the client need into software requirements to ensure
+                that the development process aligns with the customer's
+                expectations
+              </li>
+              <li>
+                Successfully developed a comprehensive Flutter application known
+                as the Wanagama App, specifically designed for the purpose of
+                online booking.
+              </li>
+              <li>
+                Successfully created documentation for the Wanagama App,
+                including the creation of a System Requirements Specification
+                (SRS) to facilitate further development needs.
+              </li>
+              <li>
+                Effectively showcased the completed application to the Wanagama
+                Directorate during a comprehensive final presentation,
+                highlighting its features, functionality, and potential impact.
+              </li>
+            </ul>
+          </article>
+          <article class="col-md-5 card shadow-sm p-4">
+            <h4>PT Ylabs Indonesia</h4>
+            <ul>
+              <li>
+                Successfully organized the Developer Bootcamp event, focusing on
+                startup technology in Indonesia, engaging more than 80
+                participants.
+              </li>
+              <li>
+                Orchestrated the Hustler event, delving into business strategy
+                and investor pitching, drawing the participation of over 100
+                attendees from across Indonesia.
+              </li>
+              <li>
+                Hosted the Ytalks talk show, shedding light on successful
+                startup strategies, which garnered the attendance of 100
+                participants.
+              </li>
+              <li>
+                Conducted two webinars that effectively attracted a 100+
+                participant audience, promoting the company's programs.
+              </li>
+            </ul>
+          </article>
+        </section>
+        <h2 class="judul-section text-center">My Projects</h2>
+        <section id="project" class="d-flex justify-content-center gap-3">
+          <div class="project-img w-1/2 gap-3">
+            <img
+              src="assets/Wanagama.png"
+              alt="wanagama-project"
+              height="350px"
+            />
+            <div class="btn-container mt-2">
+              <button
+                class="btn btn-primary"
+                onclick="location.href='https://github.com/DhiasNaufal/wanagama-mobile-app'"
+              >
+                github repo
+              </button>
+            </div>
+          </div>
+          <div class="project-img w-1/2 gap-3">
+            <img src="assets/Medq.png" alt="MEDQ-project" height="350px" />
+            <div class="btn-container mt-2">
+              <button
+                class="btn btn-primary"
+                onclick="location.href='https://github.com/DhiasNaufal/MedQ_App'"
+              >
+                github repo
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p class="text-center mt-3">&copy; 2023 Landing Page</p>
+      </footer>
+    </div>
+    <script src="about-script.js"></script>
+  </body>
+</html>
